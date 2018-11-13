@@ -1,0 +1,1 @@
+SELECT Name as Employee FROM Employee as e WHERE e.Salary > (SELECT Salary FROM Employee as e2 WHERE e.ManagerId = e2.Id )
